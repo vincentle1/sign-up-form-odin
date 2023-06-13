@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'norsebold';
   src: url('assets/fonts/norse-bold-webfont.woff2') format('woff2'),
-       url('assets/fonts/norse-bold-webfont.woff') format('woff');
+    url('assets/fonts/norse-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,6 +18,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-size: 2.6rem;
+  max-width: 75ch;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Left side
   ============================================================ */
 
@@ -27,27 +38,30 @@ body {
   background-size: cover;
   flex-grow: 1;
   min-height: 100%;
-}
 
-.img-container > div {
-  display: flex;
-  justify-content: center;
 }
 
 .logo-text {
-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  gap: 15px;
+  background-color: hsla(0, 0%, 14%, 0.8);
+  padding: 2rem;
 }
+
 
 .logo-text > h1 {
   font-family: "norsebold", sans-serif;
   color: white;
-  font-size: 6rem;
-  
+  font-size: 10rem;
+  margin: 0px;
 }
 
 .logo-text > img {
   height: auto;
-  width: 30%;
+  max-width: 10rem;
 }
 
 
@@ -55,5 +69,46 @@ width: 100%;
   ============================================================ */
 
 .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 2;
+  background-color:hsla(0, 0%, 93%, 0.8);
+  padding-left: 5rem;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.sign-up {
   flex-grow: 2;
 }
+
+.description > h2 {
+  font-size: 2.6rem;
+  max-width: 75ch;
+}
+
+.test-container {
+  display: flex;
+  gap: 4rem;
+}
+
+
+form li > label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+form li > input {
+  font-size: 1.8rem;
+}
+
+
